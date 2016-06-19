@@ -48,7 +48,7 @@ setTitle("Muur");
 
             {
 
-                likMijnLul();
+                Mijn();
 //                //this is the code for popup window
 //            LayoutInflater inflater = (LayoutInflater) MainActivity.this.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
 //            View popupView1 = inflater.inflate(R.layout.popup1, null, false);
@@ -61,13 +61,13 @@ setTitle("Muur");
 //
 //
 //            Button SLUIT = (Button) popupView1.findViewById(R.id.widget41);
-//            Log.v("krijg de"," tiefus");
+//            Log.v("","");
 //            SLUIT.setOnClickListener(new View.OnClickListener() {
 //
 //                //@Override
 //                public void onClick(View popupView1) {
 //                    pw.dismiss();
-//                    Log.v("krijg de"," kanker");
+//                    Log.v("","");
 //                }
 //            });
 
@@ -161,7 +161,7 @@ setTitle("Muur");
 
 
 
-   private void likMijnLul(){
+   private void Mijn(){
 
       // this is the code for popup window
             LayoutInflater inflater = (LayoutInflater) MainActivity.this.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
