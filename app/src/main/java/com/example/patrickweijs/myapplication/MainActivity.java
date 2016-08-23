@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.content.pm.ActivityInfo;
 import android.graphics.drawable.BitmapDrawable;
 import android.os.Bundle;
+import android.support.v7.app.ActionBarActivity;
 import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.Menu;
@@ -16,7 +17,7 @@ import android.widget.Button;
 import android.widget.PopupWindow;
 
 
-public class MainActivity extends Activity {
+public class MainActivity extends ActionBarActivity {
 Button fotoClick;
 Button textClick;
 Button fotoTextClick;
