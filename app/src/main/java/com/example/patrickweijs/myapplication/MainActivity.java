@@ -1,6 +1,5 @@
 package com.example.patrickweijs.myapplication;
 
-import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.content.pm.ActivityInfo;
@@ -15,6 +14,16 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.PopupWindow;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.util.ArrayList;
+import java.util.List;
+import android.os.Bundle;
+import android.util.Log;
+import android.widget.ListView;
+
 
 
 public class MainActivity extends ActionBarActivity {
@@ -31,14 +40,11 @@ Button kaasschaaf;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-setTitle("Muur");
+        setTitle("Muur");
         super.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-
-
 
 
         fotoClick = (Button) findViewById(R.id.I_Button);
@@ -87,13 +93,14 @@ setTitle("Muur");
             public void onClick(View v)
 
             {
-                //this is the code for popup window
+                startActivity(new Intent(MainActivity.this, ListActivity.class));
+                /*//this is the code for popup window
                 LayoutInflater inflater = (LayoutInflater) MainActivity.this.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
                 //Here x is the name of the xml which contains the popup components
                    pw = new PopupWindow(inflater.inflate(R.layout.popup2,null, false),2200,1500,true);
                 pw.setBackgroundDrawable(new BitmapDrawable());
                 //Here y is the id of the root component
-                pw.showAtLocation(findViewById(R.id.deze), Gravity.CENTER, 0,0);
+                pw.showAtLocation(findViewById(R.id.deze), Gravity.CENTER, 0,0);*/
             }
         });
 
@@ -160,8 +167,6 @@ setTitle("Muur");
 
 
 
-
-
    private void Mijn(){
 
       // this is the code for popup window
@@ -172,10 +177,6 @@ setTitle("Muur");
             pw.setBackgroundDrawable(new BitmapDrawable());
             //Here y is the id of the root component
             pw.showAtLocation(findViewById(R.id.deze), Gravity.CENTER, 0, 0);
-
-
-
-
 
    }
 
