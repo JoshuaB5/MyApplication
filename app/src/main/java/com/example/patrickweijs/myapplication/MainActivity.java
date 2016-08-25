@@ -121,13 +121,16 @@ Button kaasschaaf;
             public void onClick(View v)
 
             {
-                //this is the code for popup window
+
+                startActivity(new Intent(MainActivity.this, AudioActivity.class));
+
+                /*//this is the code for popup window
                 LayoutInflater inflater = (LayoutInflater) MainActivity.this.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
                 //Here x is the name of the xml which contains the popup components
                  pw = new PopupWindow(inflater.inflate(R.layout.popup4,null, false),2200,1500,true);
                 pw.setBackgroundDrawable(new BitmapDrawable());
                 //Here y is the id of the root component
-                pw.showAtLocation(findViewById(R.id.deze), Gravity.CENTER, 0,0);
+                pw.showAtLocation(findViewById(R.id.deze), Gravity.CENTER, 0,0);*/
 
 
 

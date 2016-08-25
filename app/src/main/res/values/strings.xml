@@ -11,4 +11,5 @@ Praesent ac nisi non odio faucibus consequat. Aliquam sit amet dui et orci males
     <string name="title_activity_list">ListActivity</string>
 
     <string name="hello_world">Hello world!</string>
+    <string name="title_activity_audio">AudioActivity</string>
 </resources>

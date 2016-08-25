@@ -54,6 +54,14 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.patrickweijs.myapplication.MainActivity" />
         </activity>
+        <activity
+            android:name=".AudioActivity"
+            android:label="@string/title_activity_audio"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.patrickweijs.myapplication.MainActivity" />
+        </activity>
     </application>
 
 </manifest>
