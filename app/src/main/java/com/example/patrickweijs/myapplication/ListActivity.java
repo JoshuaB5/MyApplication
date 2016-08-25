@@ -29,10 +29,10 @@ public class ListActivity extends AppCompatActivity {
 
 
         //Reading CSV file for list
-        InputStream inputStream = getResources().openRawResource(R.raw.foodlist);
+        InputStream inputStream = getResources().openRawResource(R.raw.namenlijst);
         CSVFile csvFile = new CSVFile(inputStream);
-        List<String[]> foodList = csvFile.read();
-        MyListAdapter adapter = new MyListAdapter(this, R.layout.listrow, R.id.txtid, foodList);
+        List<String[]> nameList = csvFile.read();
+        MyListAdapter adapter = new MyListAdapter(this, R.layout.listrow, R.id.txtid, nameList);
         ListView listView = (ListView) findViewById(R.id.listview);
         Log.d("CREATION", "List is being executed");
         listView.setAdapter(adapter);
