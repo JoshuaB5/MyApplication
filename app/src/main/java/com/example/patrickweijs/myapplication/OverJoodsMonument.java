@@ -26,6 +26,7 @@ public class OverJoodsMonument extends ActionBarActivity {
         b1 = (Button)findViewById(R.id.button1);
         b2 = (Button)findViewById(R.id.button2);
 
+
         b1.setOnClickListener(new View.OnClickListener() {
 
             @Override

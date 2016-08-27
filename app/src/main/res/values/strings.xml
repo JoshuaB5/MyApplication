@@ -2,12 +2,22 @@
     <string name="app_name">Joods Monument</string>
     <string name="title_activity_maps">Map</string>
     <string name="action_settings">Settings</string>
-    <string name="over_tekst">"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"</string>
-    <string name="Lorem"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sit amet gravida mauris. Sed tempus odio sed accumsan laoreet. Nulla vel tempus nisi. Sed et malesuada diam. Quisque lacinia tristique porttitor. Nulla facilisi. Praesent risus nulla, tristique sed sollicitudin non, volutpat ut ipsum. Pellentesque pellentesque, lectus vitae venenatis ullamcorper, ante diam tempor odio, eu vulputate justo purus et massa. Sed ipsum ligula, interdum congue quam vel, ullamcorper auctor arcu.
-
-Donec pellentesque a justo in tempus. Cras orci massa, elementum non turpis ut, interdum bibendum nunc. Sed vitae tortor vitae mauris tincidunt rhoncus. Sed eget metus eros. Nulla ac posuere quam. Cras dictum augue ac sapien hendrerit consequat. Nam eu cursus augue, nec cursus orci. Aliquam suscipit, libero nec vehicula molestie, nulla tellus mollis sapien, nec molestie mauris arcu eget leo. Vestibulum velit mauris, vulputate id eros vitae, tempus fermentum est. Morbi tincidunt urna a erat tempor, vitae dictum lectus varius. Quisque lorem sapien, porttitor id egestas vel, ultrices feugiat turpis. Proin lacinia enim et sapien malesuada, quis elementum erat ultrices. Donec id aliquam erat. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vivamus euismod dui et turpis fermentum vestibulum. Nullam tempus tellus sit amet viverra rutrum.
-
-Praesent ac nisi non odio faucibus consequat. Aliquam sit amet dui et orci malesuada mollis. Vestibulum id tempus neque, varius gravida eros. Nam eget augue dictum, pulvinar turpis quis, consectetur urna. Nullam a metus et lectus ullamcorper consequat sit amet at dui. Maecenas arcu urna, consectetur non nulla sit amet, hendrerit suscipit ligula. Maecenas semper, nibh a viverra aliquam, neque magna ultrices magna, vel porttitor justo urna ut magna. Phasellus vitae mi varius arcu dapibus porttitor. Donec volutpat eget velit ultrices interdum. Integer non pellentesque felis. Praesent quis ultrices arcu. Duis nec malesuada diam, eu malesuada leo. Nunc non lectus vel ipsum commodo mattis eu at enim. Duis in varius nunc, id vulputate arcu. Aenean eu felis eget urna facilisis malesuada. Integer id nunc at odio fringilla bibendum. </string>
+    <string name="over_tekst">"             Joods Monument Utrecht:
+        Het is 2016, vele steden hebben een monument opgericht ter herdenking van de Joden die gestorven waren in de Tweede Wereldoorlog. Zowat elke grote stad heeft een monument&#8230; behalve Utrecht.
+        Tot heden! Want de stichting Joods Monument Utrecht heeft een monument opgericht, niet alleen voor Joden in het algemeen, maar vooral ter nagedachtenis voor de Joden die via Station Maliebaan naar de concentratiecampen gebracht.
+        Het monument betreft een muur, waarin alle namen staan van de joden die in de Tweede Wereldoorlog vanuit Utrecht zijn weggevoerd naar verschillende concentratiekampen. Bij de muur wordt ook een sjofar (een joodse hoorn) geplaatst.
+        De stichting Joods Monument vindt het belangrijk dat Joden die in Utrecht wonen een plek hebben waar zij samen kunnen komen om de slachtoffers van de Tweede Wereldoorlog te herdenken en dit nooit te vergeten.
+        Niet alleen is dit van belang voor de Joodse gemeenschap, maar ook voor de jongere generaties die weinig hebben meegekregen van de Tweede Wereldoorlog, de stichting hoopt met dit monument, de app, en de website, deze jongere generatie te onderwijzen over dit stukje geschiedenis wat zich plaatsvond in Utrecht."
+    </string>
+    <string name="verhaal1">"Joseph de Leeuw begon samen met zijn vrouw in 1935 een koosjere brood- en banketbakkerij met lunchroom aan de Lijnmarkt 37 in Utrecht.
+        In 1942 kreeg hij opdracht, via de Joodse Raad, van de Duitse bezetter om 2 koosjere krentenbollen te gaan uitdelen op de dinsdagavonden.
+        De krentenbollen most hij uitdelen aan de Joden die hier vanaf dit Maliebaanstation, op transport gesteld werden.
+        Het waren zijn klanten, zijn vrienden! Hij moest toezien hoe al zijn joodse vrienden afgevoerd werden naar de concentratiekampen&#8230;
+        Toen er halverwege 1943 niet meer genoeg Joden waren hoorde hij toevallig de duitsers zeggen: 'Stop die bakker er maar bij!'.
+        Hij is toen onder de wagons door gevlucht en met zijn vrouw ondergedoken.
+        Ze hadden hun 6-jarig zoontje laten onderduiken via de Utrechtse Studentenvereniging.
+        De Joodse bakker ontvluchtte zo met een sluw plan de klauwen van de Duitse bezetters, wat een verhaal!"
+    </string>
     <string name="title_activity_list">ListActivity</string>
 
     <string name="hello_world">Hello world!</string>
