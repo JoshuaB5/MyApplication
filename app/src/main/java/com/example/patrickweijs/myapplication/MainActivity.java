@@ -21,11 +21,8 @@ public class MainActivity extends ActionBarActivity {
 Button fotoClick;
 Button textClick;
 Button fotoTextClick;
-Button videoClick;
 Button soundClick;
-Button playBack;
-Button kaasschaaf;
-    PopupWindow pw;
+PopupWindow pw;
 
 
 
@@ -46,37 +43,14 @@ Button kaasschaaf;
 
             {
 
-                Mijn();
-//                //this is the code for popup window
-//            LayoutInflater inflater = (LayoutInflater) MainActivity.this.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-//            View popupView1 = inflater.inflate(R.layout.popup1, null, false);
-//            //Here x is the name of the xml which contains the popup components
-//            pw = new PopupWindow(inflater.inflate(R.layout.popup1, null, false), 2200, 800, true);
-//
-//            //Here y is the id of the root component
-//            pw.showAtLocation(findViewById(R.id.deze), Gravity.CENTER, 0, 0);
-//
-//
-//
-//            Button SLUIT = (Button) popupView1.findViewById(R.id.widget41);
-//            Log.v("","");
-//            SLUIT.setOnClickListener(new View.OnClickListener() {
-//
-//                //@Override
-//                public void onClick(View popupView1) {
-//                    pw.dismiss();
-//                    Log.v("","");
-//                }
-//            });
+                startActivity(new Intent(MainActivity.this, YouTubePlayerFragmentActivity.class));
 
-        }
-
-
-
+            }
 
 
         });
 
+        //popup voor namenlijst
         textClick = (Button) findViewById(R.id.T_Button);
         textClick.setOnClickListener(new OnClickListener(){
 
@@ -85,17 +59,12 @@ Button kaasschaaf;
 
             {
                 startActivity(new Intent(MainActivity.this, ListActivity.class));
-                /*//this is the code for popup window
-                LayoutInflater inflater = (LayoutInflater) MainActivity.this.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-                //Here x is the name of the xml which contains the popup components
-                   pw = new PopupWindow(inflater.inflate(R.layout.popup2,null, false),2200,1500,true);
-                pw.setBackgroundDrawable(new BitmapDrawable());
-                //Here y is the id of the root component
-                pw.showAtLocation(findViewById(R.id.deze), Gravity.CENTER, 0,0);*/
+
             }
         });
 
 
+        //popup voor verhaal
         fotoTextClick = (Button) findViewById(R.id.IT_Button);
         fotoTextClick.setOnClickListener(new OnClickListener(){
 
@@ -103,6 +72,7 @@ Button kaasschaaf;
             public void onClick(View v)
 
             {
+
                 //this is the code for popup window
                 LayoutInflater inflater = (LayoutInflater) MainActivity.this.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
                 //Here x is the name of the xml which contains the popup components
@@ -114,6 +84,8 @@ Button kaasschaaf;
         });
 
 
+
+        //popup voor audio
         soundClick = (Button) findViewById(R.id.S_Button);
         soundClick.setOnClickListener(new OnClickListener(){
 
@@ -124,44 +96,13 @@ Button kaasschaaf;
 
                 startActivity(new Intent(MainActivity.this, AudioActivity.class));
 
-                /*//this is the code for popup window
-                LayoutInflater inflater = (LayoutInflater) MainActivity.this.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-                //Here x is the name of the xml which contains the popup components
-                 pw = new PopupWindow(inflater.inflate(R.layout.popup4,null, false),2200,1500,true);
-                pw.setBackgroundDrawable(new BitmapDrawable());
-                //Here y is the id of the root component
-                pw.showAtLocation(findViewById(R.id.deze), Gravity.CENTER, 0,0);*/
-
-
-
             }
         });
-
-
-
-//        playBack = (Button) findViewById(R.id.Play);
-//        playBack.setOnClickListener(new View.OnClickListener(){
-//
-//            @Override
-//            public void onClick(View v)
-//
-//            {
-//
-//                // MediaPlayer mPlayer = MediaPlayer.create(PlayWorld.this, R.raw.Speech);
-//                // start()
-//
-//
-//            }
-//        });
-
-
-
 
     }
 
 
-
-   private void Mijn(){
+   /*private void Mijn(){
 
       // this is the code for popup window
             LayoutInflater inflater = (LayoutInflater) MainActivity.this.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
@@ -172,7 +113,7 @@ Button kaasschaaf;
             //Here y is the id of the root component
             pw.showAtLocation(findViewById(R.id.deze), Gravity.CENTER, 0, 0);
 
-   }
+   }*/
 
 
     @Override

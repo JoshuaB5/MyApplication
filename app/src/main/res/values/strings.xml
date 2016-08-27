@@ -22,4 +22,5 @@
 
     <string name="hello_world">Hello world!</string>
     <string name="title_activity_audio">AudioActivity</string>
+    <string name="title_activity_you_tube_player_fragment">YouTubePlayerFragmentActivity</string>
 </resources>

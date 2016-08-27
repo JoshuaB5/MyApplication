@@ -10,7 +10,7 @@ android:paddingBottom="16dp" tools:context=".MainActivity"
 <Button
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:text="Image"
+    android:text="Video"
     android:id="@+id/I_Button"
     android:layout_alignParentBottom="true"
     android:layout_alignParentLeft="true"

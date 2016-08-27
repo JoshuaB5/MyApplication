@@ -62,6 +62,14 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.patrickweijs.myapplication.MainActivity" />
         </activity>
+        <activity
+            android:name=".YouTubePlayerFragmentActivity"
+            android:label="@string/title_activity_you_tube_player_fragment"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.patrickweijs.myapplication.MainActivity" />
+        </activity>
     </application>
 
 </manifest>
