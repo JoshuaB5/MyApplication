@@ -28,8 +28,9 @@ public class ListActivity extends AppCompatActivity {
         setContentView(R.layout.popup2);
 
 
+
         //Reading CSV file for list
-        InputStream inputStream = getResources().openRawResource(R.raw.namenlijst);
+        InputStream inputStream = getResources().openRawResource(R.raw.namenfiltered);
         CSVFile csvFile = new CSVFile(inputStream);
         List<String[]> nameList = csvFile.read();
         MyListAdapter adapter = new MyListAdapter(this, R.layout.listrow, R.id.txtid, nameList);
@@ -37,7 +38,8 @@ public class ListActivity extends AppCompatActivity {
         Log.d("CREATION", "List is being executed");
         listView.setAdapter(adapter);
 
-
+        listView.setFastScrollEnabled(true);
+        listView.setFastScrollAlwaysVisible(true);
 
 
     }
@@ -57,7 +59,7 @@ public class ListActivity extends AppCompatActivity {
             try {
                 String line;
                 while ((line = reader.readLine()) != null) {
-                    String[] row = line.split(";");
+                    String[] row = line.split("\n");
                     resultList.add(row);
                 }
             }

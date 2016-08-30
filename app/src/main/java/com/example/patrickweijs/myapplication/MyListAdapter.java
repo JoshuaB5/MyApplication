@@ -15,6 +15,7 @@ public class MyListAdapter extends ArrayAdapter<String[]>{
     Context context;
     String path;
 
+
     public MyListAdapter(Context context, int vg, int id, List<String[]> items){
         super(context,vg, id, items);
         this.context=context;
@@ -24,7 +25,7 @@ public class MyListAdapter extends ArrayAdapter<String[]>{
     }
     static class ViewHolder {
         public TextView textid;
-        public TextView textname;
+        /*public TextView textname;*/
 
     }
 
@@ -36,14 +37,14 @@ public class MyListAdapter extends ArrayAdapter<String[]>{
             rowView = inflater.inflate(groupid, parent, false);
             ViewHolder viewHolder = new ViewHolder();
             viewHolder.textid = (TextView) rowView.findViewById(R.id.txtid);
-            viewHolder.textname = (TextView) rowView.findViewById(R.id.txtname);
+            /*viewHolder.textname = (TextView) rowView.findViewById(R.id.txtname);*/
             rowView.setTag(viewHolder);
         }
         // Fill data
         ViewHolder holder = (ViewHolder) rowView.getTag();
         String[] row=items.get(position);
         holder.textid.setText(row[0]);
-        holder.textname.setText(row[1]);
+        /*holder.textname.setText(row[1]);*/
 
         return rowView;
     }
