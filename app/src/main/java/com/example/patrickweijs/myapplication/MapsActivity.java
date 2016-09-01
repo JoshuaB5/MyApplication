@@ -39,7 +39,8 @@ public class MapsActivity extends ActionBarActivity {
 
             @Override
             public void onClick(View v) {
-                Uri gmmIntentUri = Uri.parse("google.navigation:ll=52.08793, 5.13114");
+                Uri gmmIntentUri = Uri.parse("google.navigation:q=Joods+Monument+Utrecht");
+                //ll=52.08793, 513114
                 Intent mapIntent = new Intent(Intent.ACTION_VIEW, gmmIntentUri);
                 mapIntent.setPackage("com.google.android.apps.maps");
                 startActivity(mapIntent);
@@ -105,8 +106,8 @@ public class MapsActivity extends ActionBarActivity {
         alertDialog.show();
 
         /* LatLng sydney = new LatLng(-33.867, 151.206); */
-        LatLng maliebaan = new LatLng(52.08793, 5.13114);
-
+        LatLng maliebaan = new LatLng(52.088247,5.1302962);
+        /* 52.08793, 5.13114 */
         mMap.setMyLocationEnabled(true);
         mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(maliebaan, 9));
 
