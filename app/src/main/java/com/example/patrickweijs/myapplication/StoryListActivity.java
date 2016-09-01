@@ -4,10 +4,12 @@ import android.content.Intent;
 import android.content.pm.ActivityInfo;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.TextView;
 
 public class StoryListActivity extends AppCompatActivity {
@@ -35,20 +37,24 @@ public class StoryListActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_story_list);
         //het lege veld waar het verhaal in komt
-        veld = (TextView) findViewById(R.id.veld);
+        veld = (EditText) findViewById(R.id.veld);
+
+        if (AdminLoginActivity.login == true){
+            Log.d("CREATION", "Boolean is true in Listactivity");
+            veld.setFocusableInTouchMode(true);
+            veld.setClickable(true); }
+        else
+            {veld.setFocusableInTouchMode(false);
+            veld.setClickable(false); }
 
         //label waar op gedrukt wordt om het lege veld te vullen
         verhaal1 = (TextView) findViewById(R.id.verhaal1);
         verhaal1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v)
-
             {
-
                 veld.setText(R.string.verhaal1);
-
             }
-
         });
 
         //label waar op gedrukt wordt om het lege veld te vullen
@@ -211,6 +217,10 @@ public class StoryListActivity extends AppCompatActivity {
             case R.id.muur:
                 finish();
                 startActivity(new Intent(getApplicationContext(), MainActivity.class));
+                return true;
+            case R.id.admincreation:
+                finish();
+                startActivity(new Intent(getApplicationContext(), AdminLoginActivity.class));
                 return true;
             default:
                 return super.onOptionsItemSelected(item);

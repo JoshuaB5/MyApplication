@@ -75,4 +75,5 @@ In 1933 voegde Alice zich bij haar ouders. In Nederland maakte ze al snel contac
     <string name="title_activity_audio">AudioActivity</string>
     <string name="title_activity_you_tube_player_fragment">YouTubePlayerFragmentActivity</string>
     <string name="title_activity_story_list">StoryListActivity</string>
+    <string name="title_activity_admin_login">AdminLoginActivity</string>
 </resources>

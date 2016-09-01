@@ -138,6 +138,10 @@ public class MapsActivity extends ActionBarActivity {
 
                 startActivity(new Intent(getApplicationContext(), MainActivity.class));
                 return true;
+            case R.id.admincreation:
+                finish();
+                startActivity(new Intent(getApplicationContext(), AdminLoginActivity.class));
+                return true;
             default:
                 return super.onOptionsItemSelected(item);
         }

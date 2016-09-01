@@ -1,8 +1,7 @@
 package com.example.patrickweijs.myapplication;
 
 import android.content.Intent;
-import android.content.pm.ActivityInfo;
-import android.media.MediaPlayer;
+import android.graphics.Color;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -10,62 +9,74 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
-import android.graphics.drawable.BitmapDrawable;
-import android.graphics.Bitmap;
-import android.widget.ImageButton;
+import android.widget.EditText;
+import android.widget.TextView;
+import android.widget.Toast;
 
-public class AudioActivity extends AppCompatActivity {
+public class AdminLoginActivity extends AppCompatActivity {
 
-private MediaPlayer mp;
+    Button b1,b2,b3;
+    EditText ed1,ed2;
+    static boolean login;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        setTitle("Muur");
-        super.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.popup4);
+        setContentView(R.layout.activity_admin_login);
 
-        mp = MediaPlayer.create(this, R.raw.rickastley);
 
-        /*Playing the audio*/
-        ImageButton play_button = (ImageButton)this.findViewById(R.id.Play);
-        play_button.setOnClickListener(new View.OnClickListener() {
+        b1=(Button)findViewById(R.id.button);
+        ed1=(EditText)findViewById(R.id.editText);
+        ed2=(EditText)findViewById(R.id.editText2);
+
+        b2=(Button)findViewById(R.id.button2);
+        b3=(Button)findViewById(R.id.button3);
+
+
+        b1.setOnClickListener(new View.OnClickListener() {
+            @Override
             public void onClick(View v) {
-                mp.start();
-                mp.isPlaying();
+                if (ed1.getText().toString().equals("admin") &&
+                        ed2.getText().toString().equals("admin")) {
+                    Toast.makeText(getApplicationContext(), "Redirecting...", Toast.LENGTH_SHORT).show();
+                    login = true;
+                    Log.d("CREATION", "Boolean is true in onClick");
+                    startActivity(new Intent(getApplicationContext(), MainActivity.class));
+                } else {
+                    Toast.makeText(getApplicationContext(), "Wrong Credentials", Toast.LENGTH_SHORT).show();
+                }
+
             }
         });
 
-        /*Pausing the audio*/
-        ImageButton stop_button = (ImageButton)this.findViewById(R.id.Stop);
-        stop_button.setOnClickListener(new View.OnClickListener() {
+
+        b2.setOnClickListener(new View.OnClickListener() {
+            @Override
             public void onClick(View v) {
-                mp.pause();
+                finish();
             }
         });
 
-        /*Replaying the audio from the beginning*/
-        ImageButton refresh_button = (ImageButton)this.findViewById(R.id.Refresh);
-        refresh_button.setOnClickListener(new View.OnClickListener() {
+        b3.setOnClickListener(new View.OnClickListener() {
+            @Override
             public void onClick(View v) {
-                mp.seekTo(0);
-                mp.start();
-                mp.isPlaying();
+                Toast.makeText(getApplicationContext(), "Logged out", Toast.LENGTH_SHORT).show();
+                login = false;
             }
         });
-
 
     }
 
-    /*Override for stopping the mediaplayer, or it will run in the background. And when opening the player again
-    it will duplicate the already playing file, leading to two audio playing at once*/
-    @Override
-    public void onBackPressed() {
-        super.onBackPressed();
-        if (mp.isPlaying()) {
-            mp.stop(); // or mp.pause();
-            mp.release();
+    public boolean login() {
+        login = false;
+        if (ed1.getText().toString().equals("admin") &&
+                ed2.getText().toString().equals("admin")) {
+            login = true;
+            Log.d("CREATION", "Boolean is true in login()");
+        } else {
+            login = false;
         }
+        return login;
     }
 
     @Override
@@ -105,4 +116,6 @@ private MediaPlayer mp;
         }
 
     }
+
+
 }
