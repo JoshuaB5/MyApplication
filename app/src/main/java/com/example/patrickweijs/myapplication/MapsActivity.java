@@ -3,11 +3,14 @@ package com.example.patrickweijs.myapplication;
 
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.net.Uri;
 import android.support.v4.app.FragmentActivity;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
 import android.widget.Toast;
 import android.app.AlertDialog;
 import com.google.android.gms.maps.CameraUpdateFactory;
@@ -20,7 +23,7 @@ public class MapsActivity extends ActionBarActivity {
 
     double latitude;
     double longitude;
-
+    Button bDirections, bMapsIntent;
     private GoogleMap mMap; // Might be null if Google Play services APK is not available.
 
     @Override
@@ -29,6 +32,20 @@ public class MapsActivity extends ActionBarActivity {
         setContentView(R.layout.activity_maps);
         setUpMapIfNeeded();
         setTitle("Route");
+        bDirections = (Button)findViewById(R.id.buttonDir);
+        bMapsIntent = (Button)findViewById(R.id.buttonLiveNav);
+
+        bMapsIntent.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+                Uri gmmIntentUri = Uri.parse("google.navigation:ll=52.08793, 5.13114");
+                Intent mapIntent = new Intent(Intent.ACTION_VIEW, gmmIntentUri);
+                mapIntent.setPackage("com.google.android.apps.maps");
+                startActivity(mapIntent);
+            }
+        });
+
 
     }
 
@@ -68,7 +85,7 @@ public class MapsActivity extends ActionBarActivity {
 
     /**
      * This is where we can add markers or lines, add listeners or move the camera. In this case, we
-     * just add a marker near Africa.
+     * just add a marker near the monument.
      * <p/>
      * This should only be called once and when we are sure that {@link #mMap} is not null.
      */
