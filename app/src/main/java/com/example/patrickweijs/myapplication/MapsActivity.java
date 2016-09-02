@@ -32,7 +32,7 @@ public class MapsActivity extends ActionBarActivity {
         setContentView(R.layout.activity_maps);
         setUpMapIfNeeded();
         setTitle("Route");
-        bDirections = (Button)findViewById(R.id.buttonDir);
+        //bDirections = (Button)findViewById(R.id.buttonDir);
         bMapsIntent = (Button)findViewById(R.id.buttonLiveNav);
 
         bMapsIntent.setOnClickListener(new View.OnClickListener() {
